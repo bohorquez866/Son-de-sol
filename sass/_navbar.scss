@@ -1,0 +1,32 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    align-items: center;
+    &__list {
+        display: flex;
+        list-style: none;
+        //
+        &--sections {
+            justify-content: space-evenly;
+            margin-left: 8%;
+        }
+        &--social {
+            margin-left: 20%;
+        }
+        //
+        &--social-item:not(:last-child), &-sections-item:not(:last-child) {
+            margin-right: 4rem;
+        }
+        //
+        &--link:visited, &--link:link {
+            text-decoration: none;
+            text-transform: uppercase;
+            border: 2px solid $grey-color;
+            border-radius: 10rem;
+            color: inherit;
+            padding: 1rem 2rem;
+        }
+    }
+}
